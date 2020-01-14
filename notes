@@ -1,0 +1,38 @@
+1. Create an array of 3 product objects
+2.Each product must have a name and a price
+3.Create a third route that returns a product page with all of 
+the products from the array
+
+/product
+
+
+
+Types of HTTP 
+1.GET
+2.POST
+3. PUT
+4  DELETE
+
+
+express 4.17.1 - netflix()
+
+express 4.19.1 - no nextflix()
+
+
+
+NPM Commands
+
+npm init 
+
+- Intialize your project as a Node.js project(This creates your package.json)
+Package.json - Is a manifest file which is a file that describes metadata about your
+applicaiton to other programmers!!
+
+
+npm install package --save  - (VERY OLD command)
+
+npm install package
+
+npm i package
+
+
