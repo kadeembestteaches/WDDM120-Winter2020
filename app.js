@@ -56,14 +56,14 @@ app.post("/sendMessage",(req,res)=>{
   }
   else
   {
-    const accountSid = 'ACd9960b60fea322d87450929d201b6a27';
-    const authToken = '86b774d0d931d9bb5eee79f3e137c464';
+    const accountSid = 'PUT YOUR ACCOUNT SID HERE';
+    const authToken = 'PUT HERE YOUR AUTHTOKEN HERE';
     const client = require('twilio')(accountSid, authToken);
     
     client.messages
       .create({
          body: `${req.body.firstName} ${req.body.lastName} Message :${req.body.message}`,
-         from: '+12604402710',
+         from: 'PUT YOUR TRIAL NUMBER HERE',
          to: `${req.body.phoneNo}`
        })
       .then(message => {
