@@ -1,0 +1,43 @@
+
+
+<!-- 
+    When dealing with most forms on the server, you should always do the following :
+    1. define an action and method attribute inside of your form
+    2. GIVE EVERY FORM CONTOROL A NAMEE!!!!!
+    3. MAKE SURE YOU HAVE A  SUBMIT BUTTON
+
+
+-->
+
+
+<!-- This form is called a URL-Encoded form
+
+
+
+firstName=Jon&latName=Snow&phoneNo=111122222&BabyGirlImissYou
+-->
+
+{{#each messages}}
+
+    <div class="errors">{{this}}</div>
+
+{{/each}}
+
+
+<form method="POST" action="/sendMessage">
+   
+    <label>First Name</label>
+    <input type="text" name="firstName" > <br>
+
+    <label>Last Name</label>
+    <input type="text"  name="lastName"> <br><br>
+
+    <label>Number</label>
+     <input type="text"  name="phoneNo"> <br> <br>
+
+    <label>Message </label>
+    <textarea name="message"></textarea> <br><br>
+
+    <input type="submit" value="Send Message">
+
+</form>
